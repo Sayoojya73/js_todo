@@ -1,0 +1,188 @@
+html{
+    font-family: 'helvetica neue';
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    
+   
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    font-size: 90px;
+    color: rgb(184, 63, 69);
+    font-stretch: 100%;
+    font-weight: 400;
+}
+.todo{
+
+    margin: auto;
+    width: 50%;
+}
+.todo-input{
+    /* background-color: aliceblue; */
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    margin: auto;
+    /* width: 40% */
+}
+
+#userinput{
+    padding: 18px 0% 18px 5%;
+    width: 95%;
+    margin-top: 23px;
+    font-size: 24px;
+    font-style: italic;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px -2px 1px 0px inset;
+    /* position: absolute;
+    z-index: -1; */
+    
+}
+.dropDown {
+    /* position: relative;
+    top: 10px;
+    left: 50px; */
+    
+    position: absolute;
+    top:35px;
+    padding: 12px;
+    background-color:transparent;
+   
+}
+
+#userinput:hover , #userinput:active ,#userinput:focus{
+    border: solid 1px rgb(184, 63, 69);
+    box-shadow: 0 0 6px rgba(214, 75, 82, 0.5);
+}
+input::placeholder{
+  color: rgb(178, 178, 178);
+  
+}
+
+ul{
+    list-style: none;
+    font-size: 24px;
+    margin:0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column-reverse;
+    
+  
+   
+    
+}
+li li{
+    border-bottom: solid 1px rgb(232, 231, 231);
+    padding: 18px 10px 18px 40px;
+    position: relative;
+    
+    
+}
+li li:hover{
+    border: solid 1px rgb(184, 63, 69);
+    box-shadow: 0 0 6px rgba(214, 75, 82, 0.5);
+    
+}
+ 
+.dltBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    color: rgb(168, 168, 168);
+    position: absolute;
+    right: 15px;
+    
+} 
+button:hover{
+    color:rgb(184, 63, 69);
+    
+}
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+.footer{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+   
+    /* padding: 13px; */
+    button:hover{
+        border: solid 1px;
+        border-radius: 3px;
+        padding: 0px 3px;
+    }
+}
+.div2{
+    button{
+        margin:0px 5px;
+    }
+
+}
+
+.selected {
+    /* border: 1px solid rgb(184, 63, 69);
+    color: rgb(184, 63, 69);
+    border-radius: 6px; */
+    border: solid 1px;
+        border-radius: 3px;
+        padding: 0px 3px;
+}
+
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+  }
+  
+  
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+ 
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: solid 1px green;
+    border-radius: 20px;
+  }
+  
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container1 .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(19, 94, 43);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
