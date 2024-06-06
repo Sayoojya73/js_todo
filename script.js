@@ -159,7 +159,7 @@ function removeCompleted() {
     console.log(currentView);
     displayCompleted();
   }
-  // renderTask(tasks);
+   renderTask(tasks);
 }
 function selectAll() {
   const allCompleted = tasks.every((task) => task.status);
